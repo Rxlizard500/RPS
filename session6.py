@@ -58,3 +58,17 @@ while True:
         print("Computer wins this round ==>")
         # If the computer wins, add +1
         compWin = compWin + 1
+    # if 'goAgain' is equal to '3' break
+    if goAgain == 2:
+        if userWin > compWin:
+            print("##############\n" +
+                  "THE USER HAS WON! :D\n" + "Final Score:\n" + "User:" + str(userWin) + "\nComputer: " + str(compWin) + "\n##############\n")
+            break
+        if userWin == compWin:
+            print("##############\n" +
+                  "IT'S A TIE! :O\n" + "Final Score:\n" + "User:" + str(userWin) + "\nComputer: " + str(compWin) + "\n##############\n")
+            break
+        else:
+            print("##############\n" +
+                  "THE USER HAS LOST! :(\n" + "Final Score:\n" + "User:" + str(userWin) + "\nComputer: " + str(compWin) + "\n##############\n")
+            break
