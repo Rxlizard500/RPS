@@ -18,9 +18,21 @@ if rulesSelected == True:
           + "Paper vs Scissor-> Scissor wins")
     quit()
 
-      goAgain = 0
+goAgain = 0
 
-      # Sets 'user' wins to '0' by default
-      userWin = 0
-      # Sets 'computer' wins to '0' by default
-      compWin = 0
+# Sets 'user' wins to '0' by default
+userWin = 0
+# Sets 'computer' wins to '0' by default
+compWin = 0
+while True:
+    print("Let's play!\n  Rock..\n    Paper..\n      Scissor..\n            SHOOT!")
+
+    # initialize value of choice_name variable
+    # corresponding to the choice value
+    choice = random.randint(1, 3)
+    if choice == 1:
+        choice_name = 'Rock'
+    elif choice == 2:
+        choice_name = 'paper'
+    else:
+        choice_name = 'scissor'
