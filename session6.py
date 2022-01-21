@@ -36,3 +36,16 @@ while True:
         choice_name = 'paper'
     else:
         choice_name = 'scissor'
+    # Condition for winning
+    if((choice == 1 and comp_choice == 2) or
+       (choice == 2 and comp_choice == 1)):
+        print("Paper wins!\n ", end="")
+        result = "paper"
+
+    elif((choice == 1 and comp_choice == 3) or
+         (choice == 3 and comp_choice == 1)):
+        print("Rock wins!\n", end="")
+        result = "Rock"
+    else:
+        print("Scissor wins!\n", end="")
+        result = "scissor"
