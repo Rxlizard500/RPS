@@ -49,3 +49,12 @@ while True:
     else:
         print("Scissor wins!\n", end="")
         result = "scissor"
+    # Printing either user or computer wins
+    if result == choice_name:
+        print("<== User wins this round")
+        # If the 'user' wins, add +1
+        userWin = userWin + 1
+    else:
+        print("Computer wins this round ==>")
+        # If the computer wins, add +1
+        compWin = compWin + 1
