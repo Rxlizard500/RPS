@@ -37,11 +37,11 @@ while True:
     else:
         choice_name = 'scissor'
     # Condition for winning
+    comp_choice = random.randint(1, 3)
     if((choice == 1 and comp_choice == 2) or
        (choice == 2 and comp_choice == 1)):
         print("Paper wins!\n ", end="")
         result = "paper"
-
     elif((choice == 1 and comp_choice == 3) or
          (choice == 3 and comp_choice == 1)):
         print("Rock wins!\n", end="")
@@ -73,7 +73,7 @@ while True:
                   "THE USER HAS LOST! :(\n" + "Final Score:\n" + "User:" + str(userWin) + "\nComputer: " + str(compWin) + "\n##############\n")
             break
             
-         else:
+    else:
         # If 'goAgain' isn't equal to three, it will continue the loop 
         goAgain = goAgain + 1
 
