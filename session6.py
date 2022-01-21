@@ -17,3 +17,10 @@ if rulesSelected == True:
           + "Rock vs Scissor-> Rock wins \n"
           + "Paper vs Scissor-> Scissor wins")
     quit()
+
+      goAgain = 0
+
+      # Sets 'user' wins to '0' by default
+      userWin = 0
+      # Sets 'computer' wins to '0' by default
+      compWin = 0
