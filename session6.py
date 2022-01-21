@@ -72,3 +72,11 @@ while True:
             print("##############\n" +
                   "THE USER HAS LOST! :(\n" + "Final Score:\n" + "User:" + str(userWin) + "\nComputer: " + str(compWin) + "\n##############\n")
             break
+            
+         else:
+        # If 'goAgain' isn't equal to three, it will continue the loop 
+        goAgain = goAgain + 1
+
+# after coming out of the while loop
+# we print thanks for playing
+print("Thanks for playing")
